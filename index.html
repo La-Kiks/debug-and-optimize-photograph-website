@@ -9,11 +9,12 @@
 	<meta name="description"
 		content="Service professionnel de photographie. Tout type de photos : portraits, mariages, évennements et entreprises. Par Nina Carducci.">
 
-	<link rel="preload" as="image" href="./assets/images/slider/slider-crosswalk-desktop.webp" imagesrcset="
-    ./assets/images/slider/slider-crosswalk-small.webp 650w,
-    ./assets/images/slider/slider-crosswalk-medium.webp 1000w,
-    ./assets/images/slider/slider-crosswalk-large.webp 1600w,
-    ./assets/images/slider/slider-crosswalk-desktop.webp 1920w
+	<link rel="preload" as="image" href="./assets/images/slider/slider-crosswalk-1920.webp" imagesrcset="
+    ./assets/images/slider/slider-crosswalk-540.webp 540w,
+	./assets/images/slider/slider-crosswalk-720.webp 720w,
+	./assets/images/slider/slider-crosswalk-960.webp 960w,
+	./assets/images/slider/slider-crosswalk-1140.webp 1140w,
+	./assets/images/slider/slider-crosswalk-1920.webp 1920w
   " imagesizes="100vw">
 
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
@@ -93,12 +94,19 @@
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<img src="./assets/images/slider/slider-crosswalk-desktop.webp" class="d-block w-100 h-auto" srcset="
-						./assets/images/slider/slider-crosswalk-small.webp 650w,
-						./assets/images/slider/slider-crosswalk-medium.webp 1000w,
-						./assets/images/slider/slider-crosswalk-large.webp 1180w,
-						./assets/images/slider/slider-crosswalk-desktop.webp 1920w
-						" sizes="100vw" width="1920" height="888" alt="business man croswalking">
+					<img src="./assets/images/slider/slider-crosswalk-1920.webp" class="d-block w-100 h-auto" srcset="
+							./assets/images/slider/slider-crosswalk-540.webp 540w,
+							./assets/images/slider/slider-crosswalk-720.webp 720w,
+							./assets/images/slider/slider-crosswalk-960.webp 960w,
+							./assets/images/slider/slider-crosswalk-1140.webp 1140w,
+							./assets/images/slider/slider-crosswalk-1920.webp 1920w
+						" sizes="
+							(max-width: 576px) 100vw,
+							(max-width: 768px) 540px,
+							(max-width: 992px) 720px,
+							(max-width: 1200px) 960px,
+							1140px
+						" width="1920" height="888" alt="business man croswalking">
 				</div>
 
 				<div class="carousel-item">
