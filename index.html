@@ -54,7 +54,8 @@
 		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
 		</script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<script defer src="./assets/maugallery.js"></script>
+	<!-- <script defer src="./assets/maugallery.js"></script> -->
+	<script defer src="./assets/gallery.js"></script>
 	<script defer src="./assets/scripts.js"></script>
 </head>
 
@@ -179,8 +180,17 @@
 		<div id="gallery">
 			<h2 class="title">Portfolio</h2>
 			<div class="container py-3">
-				<div class="gallery" style="display: none">
-					<img data-gallery-tag="Concert" class="gallery-item"
+				<div class="gallery">
+					<div class="gallery-filters">
+						<button data-filter="all" class="active">Tous</button>
+						<button data-filter="Concert">Concert</button>
+						<button data-filter="Entreprises">Entreprises</button>
+						<button data-filter="Mariages">Mariages</button>
+						<button data-filter="Portrait">Portrait</button>
+					</div>
+				</div>
+				<div class="gallery-grid">
+					<img data-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concert-red-desktop.webp" srcset="
 						./assets/images/gallery/concerts/concert-red-small.webp 575w,
 						./assets/images/gallery/concerts/concert-red-large.webp 320w,
@@ -191,7 +201,7 @@
 					440px
 					" width="
 					575" height="575" alt="redlight concert" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/businessman-desktop.webp" srcset="
 						./assets/images/gallery/entreprise/businessman-small.webp 575w,
 						./assets/images/gallery/entreprise/businessman-large.webp 320w,
@@ -201,7 +211,7 @@
 					(max-width: 1180px) 320px,
 					440px
 					" width="575" height="575" alt="businessman portrait" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/entreprise-duo-small.webp" srcset="
 						./assets/images/gallery/entreprise/entreprise-duo-small.webp 575w,
 						./assets/images/gallery/entreprise/entreprise-duo-large.webp 320w,
@@ -211,8 +221,7 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="entreprise-duo photo" />
-
-					<img data-gallery-tag="Mariages" class="gallery-item"
+					<img data-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/wedding-hands-small.webp" srcset="
 						./assets/images/gallery/mariage/wedding-hands-small.webp 575w,
 						./assets/images/gallery/mariage/wedding-hands-large.webp 320w,
@@ -222,8 +231,7 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Macro picture of two pairs of hands" />
-
-					<img data-gallery-tag="Portrait" class="gallery-item"
+					<img data-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/man-portrait-small.webp" srcset="
 						./assets/images/gallery/portraits/man-portrait-small.webp 575w,
 						./assets/images/gallery/portraits/man-portrait-large.webp 320w,
@@ -233,8 +241,7 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Man portrait" />
-
-					<img data-gallery-tag="Mariages" class="gallery-item"
+					<img data-tag="Mariages" class="gallery-item"
 						src="./assets/images/gallery/mariage/wedding-couple-small.webp" srcset="
 						./assets/images/gallery/mariage/wedding-couple-small.webp 575w,
 						./assets/images/gallery/mariage/wedding-couple-large.webp 320w,
@@ -244,7 +251,7 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Wedding couple photo" />
-					<img data-gallery-tag="Portrait" class="gallery-item"
+					<img data-tag="Portrait" class="gallery-item"
 						src="./assets/images/gallery/portraits/woman-portrait-small.webp" srcset="
 						./assets/images/gallery/portraits/woman-portrait-small.webp 575w,
 						./assets/images/gallery/portraits/woman-portrait-large.webp 320w,
@@ -254,18 +261,18 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Woman portrait" />
-					<img data-gallery-tag="Concert" class="gallery-item"
+					<img data-tag="Concert" class="gallery-item"
 						src="./assets/images/gallery/concerts/concert-white-desktop.webp" srcset="
 						./assets/images/gallery/concerts/concert-white-small.webp 575w,
 						./assets/images/gallery/concerts/concert-white-large.webp 320w,
-						./assets/images/gallery/concerts/concert-white-desktop.webp 880w
+						./assets/images/gallery/concerts/concert-white-desktop.webp 640w
 					" sizes="
 					(max-width: 575px) 575px,
 					(max-width: 1180px) 320px,
 					440px
 					" width="
 					575" height="575" alt="whitelight concert" />
-					<img data-gallery-tag="Entreprises" class="gallery-item"
+					<img data-tag="Entreprises" class="gallery-item"
 						src="./assets/images/gallery/entreprise/computer-woman-small.webp" srcset="
 						./assets/images/gallery/entreprise/computer-woman-small.webp 575w,
 						./assets/images/gallery/entreprise/computer-woman-large.webp 320w,
@@ -277,6 +284,7 @@
 					" width="575" height="575" alt="computer-woman portrait" />
 				</div>
 			</div>
+
 			<div class="quote">
 				<figure>
 					<blockquote>
