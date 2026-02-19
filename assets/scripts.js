@@ -15,8 +15,8 @@ $(document).ready(function () {
 });
 
 // Carousel optimized
-window.addEventListener("load", function () {
-  new bootstrap.Carousel(
-    this.document.querySelector("#carouselExampleIndicators"),
-  );
-});
+// window.addEventListener("load", function () {
+//   new bootstrap.Carousel(
+//     this.document.querySelector("#carouselExampleIndicators"),
+//   );
+// });

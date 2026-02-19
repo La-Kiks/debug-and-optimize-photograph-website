@@ -59,34 +59,35 @@
 </head>
 
 <body>
-	<div class="top-header">
-		<h3 class="name">Nina Carducci</h3>
-		<div class="nav">
-			<ul>
-				<li><a href="#about">À propos</a></li>
-				<li><a href="#gallery">Galerie</a></li>
-				<li><a href="#services">Service</a></li>
-				<li><a href="#contact">Contact</a></li>
-				<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
-						target="_blank"><img src="assets/images/instagram.svg" width="20" height="20"
-							alt="instagram icon"></a></li>
-			</ul>
-		</div>
-	</div>
-	<div id="header">
-		<div id="carouselExampleIndicators" class="carousel slide">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-					aria-label="Slide 3"></button>
+	<header role="header">
+		<div role="navigation" class="top-header">
+			<h1 class="name">Nina Carducci</h1>
+			<div class="nav">
+				<ul>
+					<li><a href="#about">À propos</a></li>
+					<li><a href="#gallery">Galerie</a></li>
+					<li><a href="#services">Service</a></li>
+					<li><a href="#contact">Contact</a></li>
+					<li><a class="social-link" href="https://www.instagram.com/ninacarducci.photo/?hl=fr"
+							target="_blank"><img src="assets/images/instagram.svg" width="20" height="20"
+								alt="instagram icon"></a></li>
+				</ul>
 			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="./assets/images/slider/slider-crosswalk-1920.webp" class="d-block w-100 h-auto"
-						fetchpriority="high" srcset="
+		</div>
+		<div id="header">
+			<div id="carouselExampleIndicators" class="carousel slide">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+						class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+						aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+						aria-label="Slide 3"></button>
+				</div>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="./assets/images/slider/slider-crosswalk-1920.webp" class="d-block w-100 h-auto"
+							fetchpriority="high" srcset="
 							./assets/images/slider/slider-crosswalk-540.webp 540w,
 							./assets/images/slider/slider-crosswalk-720.webp 720w,
 							./assets/images/slider/slider-crosswalk-960.webp 960w,
@@ -99,11 +100,11 @@
 							(max-width: 1200px) 960px,
 							1140px
 						" width="1920" height="888" alt="business man croswalking">
-				</div>
+					</div>
 
-				<div class="carousel-item">
-					<img src="./assets/images/slider/slider-crowd-desktop.webp" class="d-block w-100 h-auto"
-						loading="lazy" fetchpriority="low" srcset="
+					<div class="carousel-item">
+						<img src="./assets/images/slider/slider-crowd-desktop.webp" class="d-block w-100 h-auto"
+							loading="lazy" fetchpriority="low" srcset="
 						./assets/images/slider/slider-crowd-small.webp 650w,
 						./assets/images/slider/slider-crowd-medium.webp 1000w,
 						./assets/images/slider/slider-crowd-large.webp 1180w,
@@ -114,10 +115,10 @@
 						(max-width: 1180px) 1180px,
 						1920px
 						" width="1920" height="888" alt="crowd at a concert">
-				</div>
-				<div class="carousel-item">
-					<img src="./assets/images/slider/slider-wedding-desktop.webp" class="d-block w-100 h-auto"
-						loading="lazy" fetchpriority="low" srcset="
+					</div>
+					<div class="carousel-item">
+						<img src="./assets/images/slider/slider-wedding-desktop.webp" class="d-block w-100 h-auto"
+							loading="lazy" fetchpriority="low" srcset="
 						./assets/images/slider/slider-wedding-small.webp 650w,
 						./assets/images/slider/slider-wedding-medium.webp 1000w,
 						./assets/images/slider/slider-wedding-large.webp 1180w,
@@ -128,23 +129,25 @@
 						(max-width: 1180px) 1180px,
 						1920px
 						" width="1920" height="888" alt="wedding couple kissing">
+					</div>
 				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
 		</div>
-	</div>
-	<div id="about">
-		<div class="picture left">
-			<img src="./assets/images/profile-desktop.webp" srcset="
+	</header>
+	<main role="main">
+		<div id="about">
+			<div class="picture left">
+				<img src="./assets/images/profile-desktop.webp" srcset="
 					./assets/images/profile-medium.webp 400w,
 					./assets/images/profile-large.webp 470w,
 					./assets/images/profile-desktop.webp 560w,
@@ -154,26 +157,31 @@
 					(max-width: 1180px) 470px,
 					560px
 					" width="560" height="560" alt="profile picture of Nina the photograph">
+			</div>
+			<div id="about-me">
+				<h2 class="about-me__title">A propos de moi</h2>
+				<h3 class="about-me__introduction h6">Devenir photographe était pour moi une évidence. Comme si j’y
+					étais
+					prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
+					immortels, voilà ce qui me fait vibrer.</h3>
+				<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie :
+					le
+					figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos
+					yeux,
+					ou le partager au plus grand nombre.
+					C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon
+					approche, ma
+					technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de
+					la
+					tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
+			</div>
 		</div>
-		<div id="about-me">
-			<h3 class="about-me__title">A propos de moi</h3>
-			<h6 class="about-me__introduction">Devenir photographe était pour moi une évidence. Comme si j’y étais
-				prédestiné. Saisir un moment, une émotion, une situation, un endroit, une lumière et les rendre
-				immortels, voilà ce qui me fait vibrer.</h6>
-			<p>Nous passons notre vie à chercher le bonheur, et lorsque nous y touchons, nous n’avons qu’une envie : le
-				figer au travers de photographies pour le savourer avec les personnes qui sont importantes à nos yeux,
-				ou le partager au plus grand nombre.
-				C’est ce que je vous propose : saisir ces merveilleux moments au travers de mon regard, mon approche, ma
-				technique. Rendre ces moments immortels, afin que vous puissiez y puiser de l’amour, du bonheur, de la
-				tendresse et de lumière à chaque fois que vous poserez les yeux sur vos photos.</p>
-		</div>
-	</div>
-	<div id="gallery">
-		<h3 class="title">Portfolio</h3>
-		<div class="container py-3">
-			<div class="gallery" style="display: none">
-				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/concert-red-desktop.webp" srcset="
+		<div id="gallery">
+			<h2 class="title">Portfolio</h2>
+			<div class="container py-3">
+				<div class="gallery" style="display: none">
+					<img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/concert-red-desktop.webp" srcset="
 						./assets/images/gallery/concerts/concert-red-small.webp 575w,
 						./assets/images/gallery/concerts/concert-red-large.webp 320w,
 						./assets/images/gallery/concerts/concert-red-desktop.webp 440w
@@ -182,9 +190,9 @@
 					(max-width: 1180px) 320px,
 					440px
 					" width="
-					575" height="575" alt="redlight concert image" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/businessman-desktop.webp" srcset="
+					575" height="575" alt="redlight concert" />
+					<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/businessman-desktop.webp" srcset="
 						./assets/images/gallery/entreprise/businessman-small.webp 575w,
 						./assets/images/gallery/entreprise/businessman-large.webp 320w,
 						./assets/images/gallery/entreprise/businessman-desktop.webp 440w
@@ -193,8 +201,8 @@
 					(max-width: 1180px) 320px,
 					440px
 					" width="575" height="575" alt="businessman portrait" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/entreprise-duo-small.webp" srcset="
+					<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/entreprise-duo-small.webp" srcset="
 						./assets/images/gallery/entreprise/entreprise-duo-small.webp 575w,
 						./assets/images/gallery/entreprise/entreprise-duo-large.webp 320w,
 						./assets/images/gallery/entreprise/entreprise-duo-desktop.webp 440w
@@ -204,8 +212,8 @@
 					440px
 					" width="575" height="575" alt="entreprise-duo photo" />
 
-				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery/mariage/wedding-hands-small.webp" srcset="
+					<img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/wedding-hands-small.webp" srcset="
 						./assets/images/gallery/mariage/wedding-hands-small.webp 575w,
 						./assets/images/gallery/mariage/wedding-hands-large.webp 320w,
 						./assets/images/gallery/mariage/wedding-hands-desktop.webp 440w
@@ -215,8 +223,8 @@
 					440px
 					" width="575" height="575" alt="Macro picture of two pairs of hands" />
 
-				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery/portraits/man-portrait-small.webp" srcset="
+					<img data-gallery-tag="Portrait" class="gallery-item"
+						src="./assets/images/gallery/portraits/man-portrait-small.webp" srcset="
 						./assets/images/gallery/portraits/man-portrait-small.webp 575w,
 						./assets/images/gallery/portraits/man-portrait-large.webp 320w,
 						./assets/images/gallery/portraits/man-portrait-desktop.webp 440w
@@ -226,8 +234,8 @@
 					440px
 					" width="575" height="575" alt="Man portrait" />
 
-				<img data-gallery-tag="Mariages" class="gallery-item"
-					src="./assets/images/gallery/mariage/wedding-couple-small.webp" srcset="
+					<img data-gallery-tag="Mariages" class="gallery-item"
+						src="./assets/images/gallery/mariage/wedding-couple-small.webp" srcset="
 						./assets/images/gallery/mariage/wedding-couple-small.webp 575w,
 						./assets/images/gallery/mariage/wedding-couple-large.webp 320w,
 						./assets/images/gallery/mariage/wedding-couple-desktop.webp 440w
@@ -236,8 +244,8 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Wedding couple photo" />
-				<img data-gallery-tag="Portrait" class="gallery-item"
-					src="./assets/images/gallery/portraits/woman-portrait-small.webp" srcset="
+					<img data-gallery-tag="Portrait" class="gallery-item"
+						src="./assets/images/gallery/portraits/woman-portrait-small.webp" srcset="
 						./assets/images/gallery/portraits/woman-portrait-small.webp 575w,
 						./assets/images/gallery/portraits/woman-portrait-large.webp 320w,
 						./assets/images/gallery/portraits/woman-portrait-desktop.webp 440w
@@ -246,8 +254,8 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="Woman portrait" />
-				<img data-gallery-tag="Concert" class="gallery-item"
-					src="./assets/images/gallery/concerts/concert-white-desktop.webp" srcset="
+					<img data-gallery-tag="Concert" class="gallery-item"
+						src="./assets/images/gallery/concerts/concert-white-desktop.webp" srcset="
 						./assets/images/gallery/concerts/concert-white-small.webp 575w,
 						./assets/images/gallery/concerts/concert-white-large.webp 320w,
 						./assets/images/gallery/concerts/concert-white-desktop.webp 880w
@@ -256,9 +264,9 @@
 					(max-width: 1180px) 320px,
 					440px
 					" width="
-					575" height="575" alt="whitelight concert image" />
-				<img data-gallery-tag="Entreprises" class="gallery-item"
-					src="./assets/images/gallery/entreprise/computer-woman-small.webp" srcset="
+					575" height="575" alt="whitelight concert" />
+					<img data-gallery-tag="Entreprises" class="gallery-item"
+						src="./assets/images/gallery/entreprise/computer-woman-small.webp" srcset="
 						./assets/images/gallery/entreprise/computer-woman-small.webp 575w,
 						./assets/images/gallery/entreprise/computer-woman-large.webp 320w,
 						./assets/images/gallery/entreprise/computer-woman-desktop.webp 440w
@@ -267,79 +275,85 @@
 					(max-width: 1180px) 320px,	
 					440px
 					" width="575" height="575" alt="computer-woman portrait" />
+				</div>
+			</div>
+			<div class="quote">
+				<figure>
+					<blockquote>
+						<h2 class="quote__text h1">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou
+							qu’un
+							fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
+							n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la
+							vérité.
+						</h2>
+					</blockquote>
+					<figcaption class="quote__author">- Richard Avedon</figcaption>
+				</figure>
+			</div>
+		</div>
+		<div id="services">
+			<h2 class="title h3">Mes services</h2>
+			<div class="container">
+				<div class="service">
+					<div class="service__description">
+						<h3>Shooting photo</h3>
+						<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace
+							en
+							Île-de-France pour réaliser vos photos</p>
+					</div>
+					<div class="service__price">
+						<h4>350€/demi journée</h4>
+						<span>Matériel, déplacement inclus</span>
+					</div>
+
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Retouches</h3>
+						<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
+							optimal pour vos publications</p>
+					</div>
+					<div class="service__price">
+						<h4>50€/photo</h4>
+						<span>2 AR par photo</span>
+					</div>
+				</div>
+				<div class="service">
+					<div class="service__description">
+						<h3>Album photos</h3>
+						<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers
+							un
+							album photo personnalisé</p>
+					</div>
+					<div class="service__price">
+						<h4>400€ album A4</h4>
+						<span>30 pages recto/verso</span>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="quote">
 			<figure>
 				<blockquote>
-					<h1 class="quote__text">Un portrait n’est pas une ressemblance. Dès lors qu’une émotion ou qu’un
-						fait est traduit en photo, il cesse d’être un fait pour devenir une opinion. L’inexactitude
-						n’existe pas en photographie. Toutes les photos sont exactes. Aucune d’elles n’est la vérité.
-					</h1>
+					<h2 class="quote__text h1">De manière inconsciente, je crois, je guette un regard, une expression,
+						des
+						traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h2>
 				</blockquote>
 				<figcaption class="quote__author">- Richard Avedon</figcaption>
 			</figure>
 		</div>
-	</div>
-	<div id="services">
-		<h3 class="title">Mes services</h3>
-		<div class="container">
-			<div class="service">
-				<div class="service__description">
-					<h3>Shooting photo</h3>
-					<p>Pour capturer vos moments les plus précieux et garder un souvenir impérissable. Je me déplace en
-						Île-de-France pour réaliser vos photos</p>
-				</div>
-				<div class="service__price">
-					<h4>350€/demi journée</h4>
-					<span>Matériel, déplacement inclus</span>
-				</div>
-
-			</div>
-			<div class="service">
-				<div class="service__description">
-					<h3>Retouches</h3>
-					<p>Vous souhaitez retoucher vos photos pour un résultat professionnel ? Bénéficier d’un rendu
-						optimal pour vos publications</p>
-				</div>
-				<div class="service__price">
-					<h4>50€/photo</h4>
-					<span>2 AR par photo</span>
-				</div>
-			</div>
-			<div class="service">
-				<div class="service__description">
-					<h3>Album photos</h3>
-					<p>Partagez avec vos proches et vos clients les photos des moments partagés ensemble à travers un
-						album photo personnalisé</p>
-				</div>
-				<div class="service__price">
-					<h4>400€ album A4</h4>
-					<span>30 pages recto/verso</span>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="quote">
-		<figure>
-			<blockquote>
-				<h1 class="quote__text">De manière inconsciente, je crois, je guette un regard, une expression, des
-					traits ou une nostalgie capable de résumer ou plus exactement de révéler une vie</h1>
-			</blockquote>
-			<figcaption class="quote__author">- Richard Avedon</figcaption>
-		</figure>
-	</div>
-	<div id="contact">
+	</main>
+	<footer role="footer" id="contact">
 		<div class="container">
 			<div class="form-container">
-				<h3>Une question ? Une demande de devis ?</h3>
+				<h2 class="h3">Une question ? Une demande de devis ?</h2>
 				<p>N’hésitez pas à m’écrire ! Je vous répondrais en moins de 24 heures</p>
 				<form action="" method="post">
-					<label>Nom</label>
+					<label for="nom">Nom</label>
 					<input type="text" name="nom" id="nom">
-					<label>Email</label>
+					<label for="email">Email</label>
 					<input type="email" name="email" id="email">
-					<label>Message</label>
+					<label for="message">Message</label>
 					<textarea name="message" id="message" cols="30" rows="10"></textarea>
 					<input type="submit" value="Envoyer" />
 				</form>
@@ -348,7 +362,7 @@
 				<img src="./assets/images/camera-large.webp" width="448" height="448" alt="photography of a camera" />
 			</div>
 		</div>
-	</div>
+	</footer>
 </body>
 
 </html>

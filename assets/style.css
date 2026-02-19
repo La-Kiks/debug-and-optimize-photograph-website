@@ -251,7 +251,7 @@ input[type="submit"] {
     margin-top: 0;
     margin-bottom: 1em;
   }
-  #about-me h6,
+  .about-me__introduction,
   #about-me p {
     width: 100%;
   }
