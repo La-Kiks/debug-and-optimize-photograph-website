@@ -12,16 +12,18 @@
 	<link rel="stylesheet" href="./assets/bootstrap/bootstrap.css">
 	<link rel="stylesheet" href="./assets/style.css">
 
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
+	<link rel="preload" as="style"
 		href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap"
-		rel="stylesheet">
+		onload="this.rel='stylesheet'">
+	<noscript>
+		<link rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Inter&family=Spectral:ital,wght@0,400;1,300;1,400;1,800&display=swap">
+	</noscript>
 
 	<script type="application/ld+json">
 		{
 		"@context": "https://schema.org",
-		"@type": "LocalBusiness",
+		"@type": "Photographer",
 		"name": "Nina Carducci Photographe",
 		"telephone": "+33-5-56-67-78-89",
 		"email": "nincacarducci@gmail.com",
@@ -50,13 +52,8 @@
 		}
 	</script>
 
-	<script defer src="https://code.jquery.com/jquery-3.4.1.min.js"
-		integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous">
-		</script>
 	<script defer src="./assets/bootstrap/bootstrap.bundle.js"></script>
-	<!-- <script defer src="./assets/maugallery.js"></script> -->
 	<script defer src="./assets/gallery.js"></script>
-	<script defer src="./assets/scripts.js"></script>
 </head>
 
 <body>
