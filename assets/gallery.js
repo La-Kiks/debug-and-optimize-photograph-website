@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
       images.forEach((img) => {
         if (filter === "all" || img.dataset.tag === filter) {
           img.style.display = "block";
+          filteredImages.push(img);
         } else {
           img.style.display = "none";
         }
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   function openLightbox() {
+    if (!filteredImages[currentIndex]) return;
     lightbox.style.display = "flex";
     lightboxImage.src = filteredImages[currentIndex].src;
   }
